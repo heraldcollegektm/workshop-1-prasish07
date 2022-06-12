@@ -15,6 +15,8 @@
         background-color: black;
         padding: 15px 10px;
         opacity: 0.5;
+        position: sticky;
+        top: 0px;
 
     }
     nav ul{
@@ -43,14 +45,11 @@
 
     }
 
-    form input{
-        
-        margin: 15px;
+    form input, textarea{
+        padding: 5px;
+        margin: 10px 0px;
         width: 30%;
-    }
-    form textarea{
-        margin: 15px;
-        width: 500px;
+        font-size: 16px;
     }
     button{
         font-size: 15px;
@@ -92,7 +91,34 @@
     }
     h1, h2, h3{
         text-decoration: underline;
+        margin: 5px;
     }
+    th, td{
+        padding: 8px;
+    }
+    .link a{
+        display: block;
+        width: 23%;
+        
+        border: 2px solid black;
+        border-radius: 6px;
+        background-color: skyblue;
+        font-size: 20px;
+        text-decoration: none;
+        padding: 5px;
+        margin: 10px auto;
+        /* width: 20px; */
+
+    }
+    #hobbies h2{
+        margin-bottom: 15px;
+    }
+
+    #hobbies li, p{
+        font-size: 18px;
+        
+    }
+
 </style>
 <body>
     <header>
@@ -100,15 +126,16 @@
             <ul ><a href=""></a>
                 <li><a href="">Home</a></li>
                 <li><a href="">Qualification</a></li>
+                <li><a href="">Link</a></li>
                 <li><a href="">Form</a></li>
             </ul>
         </nav>
     </header>
-    <section>
+    <section id="Home">
         <h1>Biopic about Prasish Shrestha</h1>
         <img src="/Workshop 1/bg.jpg" alt="no image" height="400px">
-        <p>Myself Prasish shresth currently studying BSc(Hons) computer science in herald college kathmandu. I am 19 years old and currently living with my parents in gatthaghar, Bhaktapur.</p><br>
-        <h2>My education history</h2>
+        <p>Myself Prasish shresth currently studying BSc(Hons) computer science in herald college kathmandu. I am 19 years old and currently living with my parents in gatthaghar, Bhaktapur. </p><br>
+        <h2>Qualification</h2>
         <table>
             <tr>
                 <th>Level of education</th>
@@ -127,26 +154,26 @@
               </tr>
         </table>
         <div id="hobbies">
-            <h2>My Interests and Hobbies</h2>
-            <ul>
-                <li>playing Football</li>
+            <h2>Interests and Hobbies</h2>
+            <ol>
+                <li>Playing Football</li>
                 <li>Drawing</li>
                 <li>Learning new things</li>
                 <li>Doing adventures activites</li>
             </ul>
         </div>
         <div class="link">
-            <h3>TO know more about me click the below link</h3>
+            <h3>TO know more about Prasish. Go through below link</h3>
             <a href="https://www.facebook.com/profile.php?id=100009284236842">Click this</a>
         </div>
     </section>
 
     <form action="/form">
-        <h1>Enter your form</h1>
-        <input type="text" name="text" placeholder="Enter your name">
-        <input type="email" name="email" placeholder="Enter your email">
-        <input type="phone" name="phone" placeholder="Enter your phone number">
-        <textarea name="text" id="area" cols="30" rows="10" placeholder="Write your though about this."></textarea>
+        <h1>Leave your message below</h1>
+        Name: <input type="text" name="text" placeholder="Enter your name">
+        Email: <input type="email" name="email" placeholder="Enter your email">
+        Phone-number: <input type="phone" name="phone" placeholder="Enter your phone number">
+        Comment: <textarea name="text" id="area" cols="30" rows="10" placeholder="Write your though about this."></textarea>
         <button class="btn">Submit</button>
     </form>
     <footer>
